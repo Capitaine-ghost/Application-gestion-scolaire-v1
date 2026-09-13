@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../styles/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<!-- TODO: Créer un logo pour l'application puisn discuter avec la team
+    1 : Ajouter le logo de l'application sur le formulaire
+
+-->
+<body class="centered-body">
+    <!-- Login container -->
+   <main class="login-page" id="login-page">
+    <div>
+        <div class="login-container">
+       
+            <!-- left side image illustration -->
+            <div class="flex-col items-center login-illustration">
+               <div class="flex-col justify-center">
+                    <h2 class="">EduManager</h2>
+                    <div class="expo-app">
+                        <p>Facilitez la gestion de votre établissement scolaire</p>
+                        <p>Grace un logiciel sur mesure prêt à l'emploi</p>
+                    </div>
+               </div>
+                <div class="flex items-center justify-center">
+                    <img  src="../assets/Online Learning Assistance - Teacher Helping Student with Laptop - Educational Guidance.jpeg"/>
+                </div>
+            </div>
+            <!-- right side login form -->
+            <div class="login-form container">
+               <div class="flex-col">
+                    <h2>CONNEXION UTILISATEUR</h2>
+                <p>connectez vous pour profiter pleinement de vos fonctionalités</p>
+               </div>
+               <div>
+                 <form id="login-form">
+                       <div id="alert-error">
+                       </div>
+                       <div class="flex gap-1 input items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="input-svg">
+                            <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+                          </svg>
+                          <input type="email" placeholder="Email Utilisateur"  class="w-full" required name="email" id="email-input">
+                       </div>
+
+                       <div class="flex gap-1 input items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="input-svg">
+                            <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z" clip-rule="evenodd" />
+                          </svg>                      
+                           <input placeholder="Mot de passe " class="w-full" type="password" required id="password-input">
+                           <button class="" id="toggle-show-password" type="button">
+                               <span id="icon-eye">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="input-svg">
+                                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd" />
+                                  </svg>
+                               </span>
+                           </button>
+                       </div>
+                    <div>
+                     <a href="./reset-mdp.html">Mot de passe oublié</a>
+                    </div>
+                  ` <div>
+                        <button class="" id="login-btn" type="button">Se Connecter</button>
+                    </div>
+                 </form>
+               </div>
+            </div>
+        </div>
+    </div>
+   </main>
+   <script src="../javascript/utilities/login.js" type="module"></script>
+</body>
+</html>
